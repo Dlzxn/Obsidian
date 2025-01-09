@@ -1,1 +1,6 @@
-{}
+{
+  "cssTheme": "GitHub Theme",
+  "enabledCssSnippets": [
+    "graph1"
+  ]
+}
