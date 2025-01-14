@@ -2,5 +2,6 @@
   "cssTheme": "GitHub Theme",
   "enabledCssSnippets": [
     "graph1"
-  ]
+  ],
+  "theme": "system"
 }
