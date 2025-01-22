@@ -1,11 +1,11 @@
 {
   "collapse-filter": false,
-  "search": "path:\"Математика/мат анализ\"  ",
-  "showTags": false,
-  "showAttachments": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [],
   "collapse-display": true,
   "showArrow": false,
@@ -17,6 +17,6 @@
   "repelStrength": 20,
   "linkStrength": 0.315418979287938,
   "linkDistance": 500,
-  "scale": 0.09475478333027831,
-  "close": false
+  "scale": 0.027153863091099135,
+  "close": true
 }
