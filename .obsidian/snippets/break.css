@@ -1,0 +1,16 @@
+@media print {
+    /* Создаем разделитель страниц для каждого заголовка */
+    .markdown-preview-section h1,
+    .markdown-preview-section h2,
+    .markdown-preview-section h3,
+    .markdown-preview-section h4,
+    .markdown-preview-section h5,
+    .markdown-preview-section h6 {
+        page-break-before: always;  /* Начало новой страницы перед заголовком */
+    }
+
+    /* Разделение на новую страницу после абзаца */
+    .markdown-preview-section p {
+        page-break-after: always;  /* Начало новой страницы после абзаца */
+    }
+}

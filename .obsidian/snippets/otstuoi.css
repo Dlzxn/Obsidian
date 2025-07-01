@@ -1,0 +1,4 @@
+/* Добавляет отступ в 4 строки в начале каждого нового файла */
+.markdown-preview-section {
+    padding-top: 4em;
+}

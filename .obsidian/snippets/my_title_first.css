@@ -1,0 +1,16 @@
+@media print {
+    body {
+        font-family: "Arial", sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    hr {
+        border: 1px solid #00b5e2;
+        margin: 10px 0;
+    }
+    .header {
+        text-align: center;
+        font-size: 24px;
+        padding: 20px 0;
+    }
+}

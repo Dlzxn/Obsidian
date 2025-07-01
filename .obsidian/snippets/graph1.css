@@ -1,0 +1,68 @@
+.graph-view {
+    background-color: #fae7b5; /* Замените на нужный цвет */
+}
+/* Добавляет отступ в 4 строки в начале каждого нового файла */
+.markdown-preview-section {
+    padding-top: 4em;
+}
+/* Заголовок с текстом и линией */
+.page-header {
+    width: 100vw;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.page-header .title-container {
+    display: flex;
+    align-items: center;
+}
+
+.page-header .iitmm {
+    font-weight: bold;
+    color: #0e92b3;
+    position: relative;
+    left: 690px;
+    top: -10px;
+}
+
+.page-header .why-py {
+    font-weight: bold;
+    position: relative;
+    left: 250px;
+}
+
+.page-header hr {
+    border: 1px solid #00b5e2;
+    margin: 10px 0;
+}
+
+/* Разметка страницы с фото и номером страницы */
+.page-footer {
+    width: 100vw;
+    font-size: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-footer .image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.page-footer .image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-footer .page-info {
+    text-align: right;
+    right: 100px;
+}
+
+.page-footer .page-info hr {
+    border: 1px solid #00b5e2;
+    margin: 0;
+}
