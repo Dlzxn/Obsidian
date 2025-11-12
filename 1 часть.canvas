@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"1db38535568b0b65","x":1520,"y":-270,"width":250,"height":53,"type":"text","text":"ОТПРАВКА ТОВАРА НА СЕРВЕР ЯНДЕКСА И ПРОВЕРЯЕМ status_code"},
+		{"id":"c3ab46ffc21e080f","x":-360,"y":-300,"width":250,"height":280,"type":"text","text":"ДАННЫЕ ПОСТУПАЮТ НА СЕРВЕР GET ЗАПРОСОМ\n, где \"image\": [\n\"http://...\",\n\"https://...\"\n]\n - список ссылок на фото"},
+		{"id":"717d8b6e1296548c","x":-840,"y":-190,"width":250,"height":60,"color":"1","type":"text","text":"API С БД"},
+		{"id":"4ce19d17f907c94c","x":160,"y":-320,"width":250,"height":300,"type":"text","text":"ОБРАЩАЕМСЯ К ЛОКАЛЬНОЙ БДшке и поверяем по длине кол-во товаров и сверяем с глобалом, если =, то отправляем .sleep(n) или на schedule все это творим, по истечению повторяется все "},
+		{"id":"9c180024d830b7ab","x":920,"y":-967,"width":250,"height":1500,"type":"text","text":"ПЕРЕВОДИМ В ФОРМАТ, ТРЕБУЕМЫЙ JSON ДЛЯ API\n\n *Обязательные поля*\n ------------------------\n \n\n- `offerId` — уникальный идентификатор вашего предложения (SKU); должен быть уникален внутри запроса.\n    \n- `name` — название товара на русском языке .\n    \n- `description` — описание товара на русском языке.\n    \n- `marketCategoryId` — ID категории товара на Маркете.\n    \n- `vendor` — производитель; пишите, как называет себя сам бренд \n    \n- `pictures` — массив URL‑изображений или идентификаторов картинок — минимум 1 снимок.\n    \n    - Также доступен флаг `onlyPartnerMediaContent` (true), чтобы использовать только переданные изображения и удалить изображения, которые пришли от Маркета.\n        \n- `basicPrice` или `price` — цена товара (например, `basicPrice` в рублях).\n    \n- `commodityCodes` — список товарных кодов. Вместо устаревшего `customsCommodityCode` используйте:\n    \n    - `CUSTOMS_COMMODITY_CODE`, `IKPU_CODE` и т. д."},
+		{"id":"609760432619638a","x":670,"y":-1680,"width":250,"height":60,"type":"text","text":"sleep(n) или шедуле"}
+	],
+	"edges":[
+		{"id":"749a484fe7591b8c","fromNode":"717d8b6e1296548c","fromSide":"right","toNode":"c3ab46ffc21e080f","toSide":"left"},
+		{"id":"e62ec25bb061a42b","fromNode":"c3ab46ffc21e080f","fromSide":"right","toNode":"9c180024d830b7ab","toSide":"left"},
+		{"id":"8f7eeb6d6ef6448f","fromNode":"9c180024d830b7ab","fromSide":"right","toNode":"1db38535568b0b65","toSide":"left"},
+		{"id":"9ae9b0ca6555772a","fromNode":"609760432619638a","fromSide":"left","toNode":"717d8b6e1296548c","toSide":"top"},
+		{"id":"754ff95d80516a91","fromNode":"4ce19d17f907c94c","fromSide":"top","toNode":"717d8b6e1296548c","toSide":"top"},
+		{"id":"07730f8e3c1bc76c","fromNode":"1db38535568b0b65","fromSide":"top","toNode":"609760432619638a","toSide":"right"}
+	]
+}

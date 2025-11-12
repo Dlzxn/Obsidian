@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"9757f260869fcf78","x":-580,"y":-140,"width":250,"height":60,"color":"1","type":"text","text":"УВЕДОМЛЕНИЕ О ПОКУПКЕ ПРИХОДИТ "},
+		{"id":"d4e3223cda040060","x":-120,"y":-280,"width":250,"height":420,"type":"text","text":"ПРОСМАТРИВАЕМ TYPE ТОВАРА(ИЛИ ПО ID) И ОТПРАЛЯЕМ POST ЗАПРОСОМ, ГДЕ ПЕРЕДАЕМ В ПАРАМЕТРЕ ТИП ИНФОРМАЦИИ, в responce получаем ссылку на активацию товара в тг"},
+		{"id":"3943a31bcda94d8b","x":300,"y":-130,"width":250,"height":150,"type":"text","text":"РЕВЬЮШИМ ПОЛУЧЕННЫЕ ДАННЫЕ, ИЗ КОТОРЫХ СОСТАВЛЯЕМ КРАСИВОЕ ПИСЬМО В STRING"},
+		{"id":"33915b16324232d0","x":760,"y":-140,"width":250,"height":180,"color":"3","type":"text","text":"ОТПРАВЛЯЕМ ЗАПРОС НА СЕРВЕРА ЯНДЕКСА ДЛЯ ОТПРАВКИ КЛЮЧ-ССЫЛКИ"},
+		{"id":"504f70064a2c012d","x":760,"y":240,"width":250,"height":200,"type":"text","text":"ОТПРАВЛЯЕМ В  ASYNCIO.SLEEP(N) И ЧЕРЕЗ N СЕКУНД ПРОВЕРЯЕМ СТАТУС ЗАКАЗА(ДОЛЖЕН БЫТЬ \"ВЫПОЛНЕНО\")\nОЖИДАЕМОЕ N = 1000"},
+		{"id":"ef9363b076cefbd1","x":760,"y":-520,"width":250,"height":180,"type":"text","text":"ЖДЕМ РЕСПОНС, КОТОРЫЙ ПОДТВЕРДИТ ОТПРАВКУ ПОЧТЫ"}
+	],
+	"edges":[
+		{"id":"fa91477c2c0ae20f","fromNode":"9757f260869fcf78","fromSide":"right","toNode":"d4e3223cda040060","toSide":"left"},
+		{"id":"f822542c3b58cc0a","fromNode":"d4e3223cda040060","fromSide":"right","toNode":"3943a31bcda94d8b","toSide":"left"},
+		{"id":"f1abbbda6a429770","fromNode":"3943a31bcda94d8b","fromSide":"right","toNode":"33915b16324232d0","toSide":"left"},
+		{"id":"758587bffb49309c","fromNode":"33915b16324232d0","fromSide":"top","toNode":"ef9363b076cefbd1","toSide":"bottom"},
+		{"id":"a16d1f42433d63c0","fromNode":"33915b16324232d0","fromSide":"bottom","toNode":"504f70064a2c012d","toSide":"top"}
+	]
+}
